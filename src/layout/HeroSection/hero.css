@@ -1,0 +1,32 @@
+.main-photo {
+  background-image: url("../../images/miky_lore.jpeg");
+  height: 30rem;
+  width: 30rem;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.hero-section {
+  padding: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (max-width: 1024px) {
+  .main-photo {
+    margin-top: 2rem;
+    height: 20rem;
+    width: 20rem;
+  }
+
+  .hero-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
