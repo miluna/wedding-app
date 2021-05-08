@@ -16,7 +16,13 @@ const Input: FC<InputProps> = ({ id, placeholder, value, type, onTyping }) => {
   };
 
   return (
-    <div className="mt-4 h-16 input-component empty flex justify-between items-left">
+    <div
+      className={classNames(
+        { "h-8": type === "checkbox" },
+        { "h-16": type !== "checkbox" },
+        "mt-4 input-component empty flex justify-between items-left"
+      )}
+    >
       {type === "checkbox" ? placeholder : null}
       <input
         id={id}
